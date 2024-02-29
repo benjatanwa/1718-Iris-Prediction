@@ -3,7 +3,8 @@ import numpy as np
 from sklearn.linear_model import Perceptron
 import pickle
 
-model = pickle.load(open('/Users/benjatanwa/Downloads/per_model-1718.sav', 'rb'))
+model = pickle.load(open('per_model-1718.sav', 'rb'))
+
 st.title('Iris Flower Prediction App')
  
 x1 = st.slider('Sepal Length', 0.0, 10.0, 0.1)
